@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,102 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Twitterati" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ZQ-fN-NO8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3u-SL-beg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="pyc-9j-Cfj">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3a-nj-lCy">
+                                                <rect key="frame" x="87" y="0.0" width="240" height="602"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🦋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd1-lN-fPW">
+                                                        <rect key="frame" x="0.0" y="200" width="240" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="jLD-zM-mzO"/>
+                                                        </constraints>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitterati" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ju9-LB-wn8">
+                                                        <rect key="frame" x="0.0" y="320" width="240" height="24"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Ju9-LB-wn8" firstAttribute="leading" secondItem="L3a-nj-lCy" secondAttribute="leading" id="AR6-25-Azo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Ju9-LB-wn8" secondAttribute="trailing" id="CxL-hO-u2K"/>
+                                                    <constraint firstItem="fd1-lN-fPW" firstAttribute="leading" secondItem="L3a-nj-lCy" secondAttribute="leading" id="HuQ-h2-Z1O"/>
+                                                    <constraint firstItem="fd1-lN-fPW" firstAttribute="top" secondItem="L3a-nj-lCy" secondAttribute="top" constant="200" id="TJf-u3-Opn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fd1-lN-fPW" secondAttribute="trailing" id="Zo3-kO-VHg"/>
+                                                    <constraint firstItem="Ju9-LB-wn8" firstAttribute="top" secondItem="fd1-lN-fPW" secondAttribute="bottom" constant="20" id="jlK-Eu-NLG"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How do people feel about..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FzP-HI-B0G">
+                                                <rect key="frame" x="0.0" y="657" width="414" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="6bp-L9-gtH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykE-xI-Qnw">
+                                                <rect key="frame" x="168.5" y="762" width="77" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="tcR-R1-Z4i"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="24"/>
+                                                <state key="normal" title="Predict">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="predictPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="reb-Je-0tn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FzP-HI-B0G" firstAttribute="leading" secondItem="pyc-9j-Cfj" secondAttribute="leading" id="GW7-Oj-edq"/>
+                                            <constraint firstAttribute="trailing" secondItem="FzP-HI-B0G" secondAttribute="trailing" id="upC-c0-4t6"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.11372549019607843" green="0.63137254901960782" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="pyc-9j-Cfj" secondAttribute="bottom" id="YCZ-Bg-afX"/>
+                                    <constraint firstItem="pyc-9j-Cfj" firstAttribute="leading" secondItem="Z3u-SL-beg" secondAttribute="leading" id="jNb-LI-Kkk"/>
+                                    <constraint firstAttribute="trailing" secondItem="pyc-9j-Cfj" secondAttribute="trailing" id="tF2-h3-NC1"/>
+                                    <constraint firstItem="pyc-9j-Cfj" firstAttribute="top" secondItem="Z3u-SL-beg" secondAttribute="top" id="y5X-fP-5SC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z3u-SL-beg" firstAttribute="leading" secondItem="7xf-GL-fu3" secondAttribute="leading" id="FOG-rH-apQ"/>
+                            <constraint firstItem="Z3u-SL-beg" firstAttribute="top" secondItem="7ZQ-fN-NO8" secondAttribute="top" id="P9U-Tf-enJ"/>
+                            <constraint firstItem="Z3u-SL-beg" firstAttribute="trailing" secondItem="7xf-GL-fu3" secondAttribute="trailing" id="Xl3-JP-WBr"/>
+                            <constraint firstItem="Z3u-SL-beg" firstAttribute="bottom" secondItem="7xf-GL-fu3" secondAttribute="bottom" id="ayB-dO-Iqi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7xf-GL-fu3"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="Z3u-SL-beg" id="djT-YU-ojB"/>
+                        <outlet property="feedbackLabel" destination="Ju9-LB-wn8" id="CvA-5B-M8u"/>
+                        <outlet property="sentimentLabel" destination="fd1-lN-fPW" id="NaJ-Lv-BCO"/>
+                        <outlet property="textField" destination="FzP-HI-B0G" id="6Wd-iP-40N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="102"/>
         </scene>
     </scenes>
 </document>
