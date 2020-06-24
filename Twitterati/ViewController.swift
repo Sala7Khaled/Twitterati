@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     
     let sentimentClassifier = TweetSentimentClassifier()
     let tweetsCount = 100
-    
     let swifter = Swifter(consumerKey: "LTReJyreyyuz4SWjVABuA1WKI", consumerSecret: "ajf107xfd6869heCG8Ptn8iztfFHBWPIxLkFGvsmoEwI7MKZcz")
     
     override func viewDidLoad() {
