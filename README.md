@@ -4,13 +4,13 @@ Twitterati app can check Twitter, looking for the tweets the have the handle of 
 
 | Sentiment Score  | Emotion |
 | ------------- | ------------- |
-| score 30 ~ 20 | 😍|
-| score 20 ~ 10 | 😄|
-| score 10 ~ 0 | 😀|
-| score = 0 | 😐|
-| score 0 ~ -10 | ☹️|
-| score -10 ~ -20 | 😡|
-| score -20 ~ -30 | 🤮|
+| score `30 ~ 20` | 😍|
+| score `20 ~ 10` | 😄|
+| score `10 ~ 0` | 😀|
+| score `= 0` | 😐|
+| score `0 ~ -10` | ☹️|
+| score `-10 ~ -20` | 😡|
+| score `-20 ~ -30` | 🤮|
 
 
 ## Preview
